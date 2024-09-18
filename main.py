@@ -1,3 +1,4 @@
+#These are all of my imports
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -8,19 +9,12 @@ import pandas as pd
 from collections import defaultdict
 from selenium.common.exceptions import TimeoutException
 
-
-# authorFirstName = []
-# authorLastName = []
-# Affiliation = []
-# Years = []
-
+#These are used when data is being extracted and imported to excel
 articlesISSUE = []
-
 authorData = defaultdict(dict)
 yearRange = [str(year) for year in range(2010, 2025)]
 
-
-
+#This where the data scrapping process begins
 driver = webdriver.Chrome()
 
 # driver.get("https://dl.acm.org/conference/hri/proceedings")
