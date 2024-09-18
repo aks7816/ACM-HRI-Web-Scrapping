@@ -1,9 +1,7 @@
 
-#We are using the webdriver because it allows us to control the web browser
+
 from selenium import webdriver
-#Need this to simulate keyboard inputs
 from selenium.webdriver.common.keys import Keys
-#To locate elements on the web page
 from selenium.webdriver.common.by import By
 import time
 from selenium.webdriver.support.ui import WebDriverWait
@@ -138,10 +136,7 @@ for article in containersList:
             
                 authorData[uniqueAuthorName][year] += 1
 
-                # authorFirstName.append(givenName)
-                # authorLastName.append(familyName)
-                # Affiliation.append(authorAff)
-                # Years.append(year)
+                
 
             
 
@@ -156,12 +151,7 @@ for article in containersList:
 driver.quit()
 print(f"Article with Issues: {articlesISSUE}")
 
-# d = {
-#     'Author First Name': authorFirstName,
-#     'Author Last Name': authorLastName,
-#     'Affiliation': Affiliation,
-#     'Years' : Years
-# }
+
 
 
 
